@@ -58,7 +58,6 @@
   .tag{display:inline-block;border:1px solid var(--line);background:#f6f6f6;padding:1px 7px;font-size:13px;margin-right:5px;white-space:nowrap}
   .tag.hot{border-color:#c9a227;background:#fdf8e6}
   .tag.new{border-color:#2f7d5c;background:#eef7f2}
-  .tag.out{border-color:#b94a48;background:#fbeeee;color:#8a2b29}
   nav.toc{border:1px solid var(--line);padding:14px 18px;margin:22px 0}
   nav.toc p{margin:0 0 6px;font-weight:700}
   nav.toc ol{margin:0;padding-left:20px}
@@ -162,7 +161,7 @@
         {
           "@type": "Question",
           "name": "云悠 YUNYOO 的 VPS 有哪些常见注意事项？",
-          "acceptedAnswer": { "@type": "Answer", "text": "三点最常见：一，支付宝支付存在汇率与手续费加价，标价与实际付款金额可能有差异；二，部分新品区域去程仍在等待运营商过白，过白前后线路表现会变化；三，默认未开启 BBR 时单线程速度可能偏低，需要自行开启 BBR 或做 TCP 调优。此外热门区域库存波动较大，购买前请确认库存。" }
+          "acceptedAnswer": { "@type": "Answer", "text": "三点最常见：一，支付宝支付存在汇率与手续费加价，标价与实际付款金额可能有差异；二，部分新品区域去程仍在等待运营商过白，过白前后线路表现会变化；三，默认未开启 BBR 时单线程速度可能偏低，需要自行开启 BBR 或做 TCP 调优。" }
         },
         {
           "@type": "Question",
@@ -192,7 +191,7 @@
 </header>
 
 <div class="warn">
-  <strong>请先阅读：</strong>本文是产品整理与选购参考，<b>不是云悠官方文档</b>。价格、库存、配置随时可能调整，下单前请以官网页面为准。文中的购买链接包含推广参数（aff），通过该链接下单不会增加你的费用。文末列出全部引用来源，可自行复核。
+  <strong>请先阅读：</strong>本文是产品整理与选购参考，<b>不是云悠官方文档</b>。价格、配置随时可能调整，下单前请以官网页面为准。文中的购买链接包含推广参数（aff），通过该链接下单不会增加你的费用。文末列出全部引用来源，可自行复核。
 </div>
 
 <nav class="toc" aria-label="目录">
@@ -225,7 +224,7 @@
     <tr><td>中国电信 / 追求最低延迟</td><td><a href="#p-hk4t">香港四区 TCVM</a></td><td>¥15.99 起</td><td>物理距离最近，「网站秒开」</td></tr>
     <tr><td>要干净 IP 跑 AI 服务</td><td><a href="#p-isp">洛杉矶 4837ISP TCVM</a></td><td>¥24.99 起</td><td>ISP 原生 IP，实测不易触发人机验证</td></tr>
     <tr><td>预算优先，能接受自己调优</td><td><a href="#p-lite">洛杉矶 C.Lite</a></td><td>¥17.99 起</td><td>500Mbps 大带宽 + 4837 线路，性价比最高</td></tr>
-    <tr><td>要三网极品线路（CN2 叠加）</td><td><a href="#p-pre">洛杉矶 C.Pre</a></td><td>¥19.99 起</td><td>CMIN2 + 9929 + CN2 三重叠加（目前售罄）</td></tr>
+    <tr><td>要三网极品线路（CN2 叠加）</td><td><a href="#p-pre">洛杉矶 C.Pre</a></td><td>¥19.99 起</td><td>CMIN2 + 9929 + CN2 三重叠加</td></tr>
     <tr><td>要海外大带宽国际线路</td><td><a href="#p-hk6">香港将军澳 TCVM</a></td><td>¥17.99 起</td><td>500Mbps–1Gbps，4–16TB 大流量</td></tr>
   </tbody>
 </table>
@@ -238,29 +237,29 @@
 <div class="tbl-scroll">
 <table>
   <thead>
-    <tr><th>产品线</th><th>区域</th><th>线路</th><th>计费</th><th>最低档配置</th><th>带宽 / 流量</th><th>月付</th><th>库存</th></tr>
+    <tr><th>产品线</th><th>区域</th><th>线路</th><th>计费</th><th>最低档配置</th><th>带宽 / 流量</th><th>月付</th></tr>
   </thead>
   <tbody>
-    <tr><td><a href="#p-lite">洛杉矶 C.Lite</a></td><td>美国 洛杉矶</td><td>4837</td><td>流量</td><td>1C / 1GB / 10GB</td><td>500Mbps / 1TB</td><td>¥17.99</td><td><span class="tag new">新品</span>充足</td></tr>
-    <tr><td><a href="#p-stdt">洛杉矶 C.Std.T</a></td><td>美国 洛杉矶</td><td>CMIN2+9929</td><td>流量</td><td>2C / 1GB / 30GB</td><td>100Mbps / 600GB</td><td>¥19.99</td><td><span class="tag hot">热销</span>较少</td></tr>
-    <tr><td><a href="#p-stdb">洛杉矶 C.Std.B</a></td><td>美国 洛杉矶</td><td>CMIN2+9929</td><td>宽带</td><td>2C / 1GB / 30GB</td><td>10Mbps 合理使用</td><td>¥19.99</td><td>充足</td></tr>
-    <tr><td><a href="#p-pre">洛杉矶 C.Pre</a></td><td>美国 洛杉矶</td><td>CMIN2+9929+CN2</td><td>流量</td><td>2C / 1GB / 30GB</td><td>50Mbps / 400GB</td><td>¥19.99</td><td><span class="tag out">售罄</span></td></tr>
-    <tr><td><a href="#p-de">法兰克福 C.Std</a></td><td>德国 法兰克福</td><td>联通 9929</td><td>流量</td><td>1C / 1GB / 10GB</td><td>200Mbps / 400GB</td><td>¥15.99</td><td>充足</td></tr>
-    <tr><td><a href="#p-hk4">香港四区 CVM</a></td><td>中国香港 九龙</td><td>混合优化</td><td>宽带</td><td>2C / 1GB / 30GB</td><td>10Mbps / 不限流量</td><td>¥17.99</td><td><span class="tag out">售罄</span></td></tr>
-    <tr><td><a href="#p-hk4t">香港四区 TCVM</a></td><td>中国香港 九龙</td><td>混合优化</td><td>流量</td><td>1C / 512MB / 30GB</td><td>100Mbps / 400GB</td><td>¥15.99</td><td><span class="tag out">售罄</span></td></tr>
-    <tr><td><a href="#p-hk5">香港荃湾 CVM</a></td><td>中国香港 荃湾</td><td>混合优化</td><td>流量</td><td>2C / 1GB / 30GB</td><td>50Mbps / 400GB</td><td>¥19.99</td><td><span class="tag out">售罄</span></td></tr>
-    <tr><td><a href="#p-hk6">香港将军澳 TCVM</a></td><td>中国香港 将军澳</td><td>国际线路</td><td>流量</td><td>1C / 1GB / 10GB</td><td>500Mbps / 4TB</td><td>¥17.99</td><td>较少</td></tr>
-    <tr><td><a href="#p-jp1">日本东京 IIJ TCVM</a></td><td>日本 东京</td><td>IIJ</td><td>流量</td><td>1C / 512MB / 10GB</td><td>3Gbps / 500GB</td><td>¥17.99</td><td>较少</td></tr>
-    <tr><td><a href="#p-jp2">日本东京 Lite TCVM</a></td><td>日本 东京</td><td>Lite 国际线路</td><td>流量</td><td>1C / 1GB / 10GB</td><td>500Mbps / 1TB</td><td>¥15.99</td><td>充足</td></tr>
-    <tr><td><a href="#p-isp">洛杉矶 4837ISP TCVM</a></td><td>美国 洛杉矶</td><td>4837 + ISP 原生 IP</td><td>流量</td><td>1C / 1GB / 10GB</td><td>300Mbps / 500GB</td><td>¥24.99</td><td>充足</td></tr>
-    <tr><td><a href="#p-us7">美国洛杉矶 TCVM</a></td><td>美国 洛杉矶</td><td>国际线路</td><td>流量</td><td>1C / 1GB / 10GB</td><td>500Mbps / 4TB</td><td>¥15.99</td><td>充足</td></tr>
-    <tr><td><a href="#p-us6">美国堪萨斯 TCVM</a></td><td>美国 堪萨斯</td><td>国际线路</td><td>流量</td><td>1C / 1GB / 10GB</td><td>500Mbps / 4TB</td><td>¥15.99</td><td>较少</td></tr>
-    <tr><td><a href="#p-gb1">英国纽卡斯尔 TCVM</a></td><td>英国 纽卡斯尔</td><td>国际线路</td><td>流量</td><td>1C / 1GB / 10GB</td><td>500Mbps / 4TB</td><td>¥15.99</td><td>充足</td></tr>
+    <tr><td><a href="#p-lite">洛杉矶 C.Lite</a> <span class="tag new">新品</span></td><td>美国 洛杉矶</td><td>4837</td><td>流量</td><td>1C / 1GB / 10GB</td><td>500Mbps / 1TB</td><td>¥17.99</td></tr>
+    <tr><td><a href="#p-stdt">洛杉矶 C.Std.T</a> <span class="tag hot">热销</span></td><td>美国 洛杉矶</td><td>CMIN2+9929</td><td>流量</td><td>2C / 1GB / 30GB</td><td>100Mbps / 600GB</td><td>¥19.99</td></tr>
+    <tr><td><a href="#p-stdb">洛杉矶 C.Std.B</a></td><td>美国 洛杉矶</td><td>CMIN2+9929</td><td>宽带</td><td>2C / 1GB / 30GB</td><td>10Mbps 合理使用</td><td>¥19.99</td></tr>
+    <tr><td><a href="#p-pre">洛杉矶 C.Pre</a></td><td>美国 洛杉矶</td><td>CMIN2+9929+CN2</td><td>流量</td><td>2C / 1GB / 30GB</td><td>50Mbps / 400GB</td><td>¥19.99</td></tr>
+    <tr><td><a href="#p-de">法兰克福 C.Std</a></td><td>德国 法兰克福</td><td>联通 9929</td><td>流量</td><td>1C / 1GB / 10GB</td><td>200Mbps / 400GB</td><td>¥15.99</td></tr>
+    <tr><td><a href="#p-hk4">香港四区 CVM</a></td><td>中国香港 九龙</td><td>混合优化</td><td>宽带</td><td>2C / 1GB / 30GB</td><td>10Mbps / 不限流量</td><td>¥17.99</td></tr>
+    <tr><td><a href="#p-hk4t">香港四区 TCVM</a></td><td>中国香港 九龙</td><td>混合优化</td><td>流量</td><td>1C / 512MB / 30GB</td><td>100Mbps / 400GB</td><td>¥15.99</td></tr>
+    <tr><td><a href="#p-hk5">香港荃湾 CVM</a></td><td>中国香港 荃湾</td><td>混合优化</td><td>流量</td><td>2C / 1GB / 30GB</td><td>50Mbps / 400GB</td><td>¥19.99</td></tr>
+    <tr><td><a href="#p-hk6">香港将军澳 TCVM</a></td><td>中国香港 将军澳</td><td>国际线路</td><td>流量</td><td>1C / 1GB / 10GB</td><td>500Mbps / 4TB</td><td>¥17.99</td></tr>
+    <tr><td><a href="#p-jp1">日本东京 IIJ TCVM</a></td><td>日本 东京</td><td>IIJ</td><td>流量</td><td>1C / 512MB / 10GB</td><td>3Gbps / 500GB</td><td>¥17.99</td></tr>
+    <tr><td><a href="#p-jp2">日本东京 Lite TCVM</a></td><td>日本 东京</td><td>Lite 国际线路</td><td>流量</td><td>1C / 1GB / 10GB</td><td>500Mbps / 1TB</td><td>¥15.99</td></tr>
+    <tr><td><a href="#p-isp">洛杉矶 4837ISP TCVM</a></td><td>美国 洛杉矶</td><td>4837 + ISP 原生 IP</td><td>流量</td><td>1C / 1GB / 10GB</td><td>300Mbps / 500GB</td><td>¥24.99</td></tr>
+    <tr><td><a href="#p-us7">美国洛杉矶 TCVM</a></td><td>美国 洛杉矶</td><td>国际线路</td><td>流量</td><td>1C / 1GB / 10GB</td><td>500Mbps / 4TB</td><td>¥15.99</td></tr>
+    <tr><td><a href="#p-us6">美国堪萨斯 TCVM</a></td><td>美国 堪萨斯</td><td>国际线路</td><td>流量</td><td>1C / 1GB / 10GB</td><td>500Mbps / 4TB</td><td>¥15.99</td></tr>
+    <tr><td><a href="#p-gb1">英国纽卡斯尔 TCVM</a></td><td>英国 纽卡斯尔</td><td>国际线路</td><td>流量</td><td>1C / 1GB / 10GB</td><td>500Mbps / 4TB</td><td>¥15.99</td></tr>
   </tbody>
 </table>
 </div>
 
-<p class="meta">价格均为官网标价（元 / 月，起），未含任何优惠码与支付手续费。库存状态为 2026-10-08 抓取时的官网显示。</p>
+<p class="meta">价格均为官网标价（元 / 月，起），未含任何优惠码与支付手续费。</p>
 
 <h2 id="isp">按运营商 / 使用场景选</h2>
 
@@ -413,7 +412,7 @@
 </div>
 
 <div class="card" id="p-pre">
-<h3>洛杉矶 C.Pre —— CMIN2 + 9929 + CN2 三重叠加 <span class="tag out">目前售罄</span></h3>
+<h3>洛杉矶 C.Pre —— CMIN2 + 9929 + CN2 三重叠加</h3>
 <div class="kv">
   <div><b>区域</b><span>美国 洛杉矶（US5）</span></div>
   <div><b>线路</b><span>CMIN2 + 联通 9929 + 电信 CN2</span></div>
@@ -435,7 +434,6 @@
 <h4>产品特点与社区反馈</h4>
 <p>C.Pre 是云悠大陆优化线里的<strong>顶配线路</strong>：在 CMIN2 + 9929 的基础上再叠加<strong>电信 CN2</strong>，三个方向都有优化，是「哪家运营商都不吃亏」的选择。硬件可选 Intel Xeon 或 AMD EPYC。</p>
 <p>社区测评里，C.Pre 的硬件表现是目前见到最好的一档：Basic 档实测为 2 核 AMD EPYC 7K62、973MB 内存、30GB 盘，硬件加权总分 30492（CPU 20776 + 内存 8109 + 硬盘 1607），明显高于同门其他产品。</p>
-<p><strong>重要提醒：</strong>截至 2026-10-08，C.Pre 全档位在官网显示<strong>售罄</strong>。这款在社区里需求很旺——前两页搜索结果中就有多条「收 C.Pre」的交易帖，说明它一旦有货就会被迅速抢完。想买的话建议先关注库存。</p>
 <blockquote>
 「好鸡bd」／「请教有 TQ 嘛，想看看丢包」／「稍等我跑一下看看」
 <cite>—— 楼主 icyfish 与用户 jtyytzl 的讨论，《[NQ+TQ]云悠yunyoo 洛杉矶C.Pre CVM - Basic》，2026-08-23</cite>
@@ -444,8 +442,8 @@
 「没人出吗😭」／「帖子在就收」
 <cite>—— 楼主 caelius，《【不收了】云悠yunyoo洛杉矶C.Pre CVM - Basic，7折款》，2026-09-12（反映该款二手需求旺盛）</cite>
 </blockquote>
-<p><strong>适合谁：</strong>三网都要照顾、对线路质量要求最高的用户。<strong>不适合：</strong>现在想立刻下单的人——先等库存。</p>
-<a class="buy" href="https://yunyoo.cc/cart?fid=1&amp;gid=28&amp;aff=XWLTQJED" rel="nofollow sponsored noopener" target="_blank">查看洛杉矶 C.Pre 配置与库存 →</a>
+<p><strong>适合谁：</strong>三网都要照顾、对线路质量要求最高的用户。</p>
+<a class="buy" href="https://yunyoo.cc/cart?fid=1&amp;gid=28&amp;aff=XWLTQJED" rel="nofollow sponsored noopener" target="_blank">查看洛杉矶 C.Pre 配置与价格 →</a>
 </div>
 
 <div class="card" id="p-de">
@@ -491,7 +489,7 @@
 </div>
 
 <div class="card" id="p-hk4t">
-<h3>香港四区 TCVM —— 混合优化，延迟最低 <span class="tag out">低价档售罄</span></h3>
+<h3>香港四区 TCVM —— 混合优化，延迟最低</h3>
 <div class="kv">
   <div><b>区域</b><span>中国香港 九龙（HK4）</span></div>
   <div><b>线路</b><span>混合优化线路</span></div>
@@ -501,12 +499,12 @@
 </div>
 <div class="tbl-scroll">
 <table>
-  <thead><tr><th>档位</th><th>CPU</th><th>内存</th><th>系统盘</th><th>带宽 / 流量</th><th>月付</th><th>库存</th></tr></thead>
+  <thead><tr><th>档位</th><th>CPU</th><th>内存</th><th>系统盘</th><th>带宽 / 流量</th><th>月付</th></tr></thead>
   <tbody>
-    <tr><td>Mini</td><td>1 核</td><td>512MB</td><td>30–200GB SSD</td><td>100Mbps / 400GB 双向</td><td>¥15.99</td><td>售罄</td></tr>
-    <tr><td>Basic</td><td>2 核</td><td>1GB</td><td>30–200GB SSD</td><td>100Mbps / 800GB 双向</td><td>¥23.99</td><td>售罄</td></tr>
-    <tr><td>Plus</td><td>2 核</td><td>2–4GB</td><td>30–200GB SSD</td><td>150Mbps / 1400GB 双向</td><td>¥37.99</td><td>较少</td></tr>
-    <tr><td>Pro</td><td>4 核</td><td>4–8GB</td><td>30–200GB SSD</td><td>150Mbps / 2000GB 双向</td><td>¥59.99</td><td>售罄</td></tr>
+    <tr><td>Mini</td><td>1 核</td><td>512MB</td><td>30–200GB SSD</td><td>100Mbps / 400GB 双向</td><td>¥15.99</td></tr>
+    <tr><td>Basic</td><td>2 核</td><td>1GB</td><td>30–200GB SSD</td><td>100Mbps / 800GB 双向</td><td>¥23.99</td></tr>
+    <tr><td>Plus</td><td>2 核</td><td>2–4GB</td><td>30–200GB SSD</td><td>150Mbps / 1400GB 双向</td><td>¥37.99</td></tr>
+    <tr><td>Pro</td><td>4 核</td><td>4–8GB</td><td>30–200GB SSD</td><td>150Mbps / 2000GB 双向</td><td>¥59.99</td></tr>
   </tbody>
 </table>
 </div>
@@ -522,11 +520,11 @@
 <cite>—— 用户 寰小腐，《[NQ+TQ]云悠yunyoo 香港荃湾 CVM - Plus》，2026-08-24</cite>
 </blockquote>
 <p><strong>适合谁：</strong>中国电信用户、对延迟最敏感的场景（建站、SSH、远程桌面）、需要中国香港 IP 的业务。<strong>不适合：</strong>需要大带宽跑量的用户。</p>
-<a class="buy" href="https://yunyoo.cc/cart?fid=5&amp;gid=16&amp;aff=XWLTQJED" rel="nofollow sponsored noopener" target="_blank">查看香港四区 TCVM 配置与库存 →</a>
+<a class="buy" href="https://yunyoo.cc/cart?fid=5&amp;gid=16&amp;aff=XWLTQJED" rel="nofollow sponsored noopener" target="_blank">查看香港四区 TCVM 配置与价格 →</a>
 </div>
 
 <div class="card" id="p-hk4">
-<h3>香港四区 CVM —— 同区域，宽带计费不限流量 <span class="tag out">低价档售罄</span></h3>
+<h3>香港四区 CVM —— 同区域，宽带计费不限流量</h3>
 <div class="kv">
   <div><b>区域</b><span>中国香港 九龙（HK4）</span></div>
   <div><b>线路</b><span>混合优化线路</span></div>
@@ -552,11 +550,11 @@
 <cite>—— 用户 psen888、楼主 西楼 等，《【NQ】云悠YUNYOO 香港荃湾 CVM - Basic》，2026-08-31 / 09-02</cite>
 </blockquote>
 <p><strong>适合谁：</strong>需要中国香港低延迟 + 不限流量 + 大系统盘的长期业务。<strong>不适合：</strong>需要高带宽突发的用户（最高 40Mbps）。</p>
-<a class="buy" href="https://yunyoo.cc/cart?fid=1&amp;gid=15&amp;aff=XWLTQJED" rel="nofollow sponsored noopener" target="_blank">查看香港四区 CVM 配置与库存 →</a>
+<a class="buy" href="https://yunyoo.cc/cart?fid=1&amp;gid=15&amp;aff=XWLTQJED" rel="nofollow sponsored noopener" target="_blank">查看香港四区 CVM 配置与价格 →</a>
 </div>
 
 <div class="card" id="p-hk5">
-<h3>香港荃湾 CVM —— 混合优化，同城另一机房 <span class="tag out">低价档售罄</span></h3>
+<h3>香港荃湾 CVM —— 混合优化，同城另一机房</h3>
 <div class="kv">
   <div><b>区域</b><span>中国香港 荃湾（HK5）</span></div>
   <div><b>线路</b><span>混合优化线路</span></div>
@@ -566,12 +564,12 @@
 </div>
 <div class="tbl-scroll">
 <table>
-  <thead><tr><th>档位</th><th>CPU</th><th>内存</th><th>系统盘</th><th>带宽 / 流量</th><th>月付</th><th>库存</th></tr></thead>
+  <thead><tr><th>档位</th><th>CPU</th><th>内存</th><th>系统盘</th><th>带宽 / 流量</th><th>月付</th></tr></thead>
   <tbody>
-    <tr><td>Basic</td><td>2 核</td><td>1GB</td><td>30–200GB SSD</td><td>50Mbps / 400GB 双向</td><td>¥19.99</td><td>售罄</td></tr>
-    <tr><td>Plus</td><td>2 核</td><td>2–4GB</td><td>30–200GB SSD</td><td>50Mbps / 500GB–1TB 双向</td><td>¥24.99</td><td>售罄</td></tr>
-    <tr><td>Pro</td><td>4 核</td><td>4–8GB</td><td>30–200GB SSD</td><td>80Mbps / 500GB–1TB 双向</td><td>¥36.99</td><td>较少</td></tr>
-    <tr><td>Ultra</td><td>8–16 核</td><td>8–16GB</td><td>30–200GB SSD</td><td>80Mbps / 500GB–1TB 双向</td><td>¥65.99</td><td>充足</td></tr>
+    <tr><td>Basic</td><td>2 核</td><td>1GB</td><td>30–200GB SSD</td><td>50Mbps / 400GB 双向</td><td>¥19.99</td></tr>
+    <tr><td>Plus</td><td>2 核</td><td>2–4GB</td><td>30–200GB SSD</td><td>50Mbps / 500GB–1TB 双向</td><td>¥24.99</td></tr>
+    <tr><td>Pro</td><td>4 核</td><td>4–8GB</td><td>30–200GB SSD</td><td>80Mbps / 500GB–1TB 双向</td><td>¥36.99</td></tr>
+    <tr><td>Ultra</td><td>8–16 核</td><td>8–16GB</td><td>30–200GB SSD</td><td>80Mbps / 500GB–1TB 双向</td><td>¥65.99</td></tr>
   </tbody>
 </table>
 </div>
@@ -587,7 +585,7 @@
 <cite>—— 用户 了却无、楼主 gtyang、用户 P0me1oo，《TQ只测不评，云悠yunyoo 香港荃湾 CVM - Pro》，2026-08-24</cite>
 </blockquote>
 <p><strong>适合谁：</strong>需要中国香港低延迟、能接受 50–80Mbps 带宽的用户。<strong>不适合：</strong>对上下行对称性有硬性要求的业务。</p>
-<a class="buy" href="https://yunyoo.cc/cart?fid=1&amp;gid=27&amp;aff=XWLTQJED" rel="nofollow sponsored noopener" target="_blank">查看香港荃湾 CVM 配置与库存 →</a>
+<a class="buy" href="https://yunyoo.cc/cart?fid=1&amp;gid=27&amp;aff=XWLTQJED" rel="nofollow sponsored noopener" target="_blank">查看香港荃湾 CVM 配置与价格 →</a>
 </div>
 
 <h2 id="global">二、国际线路产品</h2>
@@ -655,7 +653,7 @@
 </table>
 </div>
 <h4>产品特点与社区反馈</h4>
-<p>这款是云悠产品线里<strong>性价比最突出的一档</strong>：Mini 档 ¥15.99 就给到 1GB 内存、500Mbps 带宽和 1TB 双向流量，且库存充足。硬件为 Intel Xeon Gold，测评实测 Geekbench 5 单核 625 分，属于轻量业务的正常水平。</p>
+<p>这款是云悠产品线里<strong>性价比最突出的一档</strong>：Mini 档 ¥15.99 就给到 1GB 内存、500Mbps 带宽和 1TB 双向流量。硬件为 Intel Xeon Gold，测评实测 Geekbench 5 单核 625 分，属于轻量业务的正常水平。</p>
 <p>关于运营商适配，社区给出的结论非常明确。一位测评者在帖子里记录了完整的讨论过程：先有人觉得「BJ联通看着还行」，随后另一位用户指出「应该是联通不行，虽然看着延迟不错，但是你看下回程，联通基本都没速度呀」，楼主最终确认「<strong>发现了，是个移动快乐机</strong>」。这就是本文把「移动首选」给到这款的依据。</p>
 <blockquote>
 「诶？BJ联通看着还行」／「我河南联通，用着还可以」／「应该是联通不行，虽然看着延迟不错，但是你看下回程，联通基本都没速度呀。」／「发现了 是个移动快乐机。」
@@ -815,7 +813,7 @@
 </table>
 </div>
 <h4>产品特点</h4>
-<p>英国纽卡斯尔是云悠在欧洲的国际线路机房，走大带宽国际线路，¥15.99 起、4TB 双向流量，库存充足。适合需要英国或欧洲 IP、面向欧洲用户业务的场景。如果目标是<strong>回国优化</strong>，欧洲方向应该选法兰克福 C.Std（9929），而不是这款。</p>
+<p>英国纽卡斯尔是云悠在欧洲的国际线路机房，走大带宽国际线路，¥15.99 起、4TB 双向流量。适合需要英国或欧洲 IP、面向欧洲用户业务的场景。如果目标是<strong>回国优化</strong>，欧洲方向应该选法兰克福 C.Std（9929），而不是这款。</p>
 <p class="meta">该产品线在 NodeSeek 前两页搜索结果中暂无对应测评，社区数据不足。</p>
 <p><strong>适合谁：</strong>需要英国 / 欧洲 IP、面向欧洲市场的业务。<strong>不适合：</strong>需要回国优化线路的用户。</p>
 <a class="buy" href="https://yunyoo.cc/cart?fid=5&amp;gid=18&amp;aff=XWLTQJED" rel="nofollow sponsored noopener" target="_blank">查看英国纽卡斯尔 TCVM 配置与价格 →</a>
@@ -867,7 +865,7 @@
 <p><strong>宽带计费</strong>（如 C.Std.B、香港四区 CVM）不限制总流量，但带宽较小（10–40Mbps）且设有「合理使用」要求，适合长期稳定在线、流量模型确定的业务。<strong>流量计费</strong>（如 C.Lite、C.Std.T、法兰克福 C.Std）给出较大带宽（50Mbps–5Gbps）但按双向流量计费，适合有突发带宽需求、流量可控的场景。</p>
 
 <h3>云悠 YUNYOO 的 VPS 有哪些常见注意事项？</h3>
-<p>三点最常见：<strong>一、支付成本</strong>——有用户实测标价 ¥12.79 的套餐，通过支付宝实付 ¥14.51，存在汇率与手续费加价；<strong>二、过白状态</strong>——部分新品区域去程仍在等待运营商过白，过白前后线路表现会变化；<strong>三、需要自行调优</strong>——默认未开启 BBR 时单线程速度可能偏低，建议自行开启 BBR 或做 TCP 调优。此外热门区域库存波动较大，购买前请确认库存状态。</p>
+<p>三点最常见：<strong>一、支付成本</strong>——有用户实测标价 ¥12.79 的套餐，通过支付宝实付 ¥14.51，存在汇率与手续费加价；<strong>二、过白状态</strong>——部分新品区域去程仍在等待运营商过白，过白前后线路表现会变化；<strong>三、需要自行调优</strong>——默认未开启 BBR 时单线程速度可能偏低，建议自行开启 BBR 或做 TCP 调优。</p>
 
 <h3>云悠 YUNYOO 有台湾机房吗？</h3>
 <p>截至 2026 年 10 月，云悠官网在售区域<strong>不包含中国台湾</strong>。2026 年 5 月社区曾出现过中国台湾 Hinet 家宽机型，但已不在当前产品列表中，可能已下架。</p>
@@ -892,11 +890,6 @@
       <td><strong>需自行调优</strong></td>
       <td>多篇测评帖的评论区一致指出默认状态下单线程速度偏慢，需开 BBR + tcpfit 或调整 TCP 缓冲区。</td>
       <td>购买前先准备好调优脚本，装机后立即执行。</td>
-    </tr>
-    <tr>
-      <td><strong>库存波动</strong></td>
-      <td>热门区域（C.Pre、香港四区低价档、香港荃湾低价档）当前显示售罄；新品上架时曾出现「没货了」→「有货了」→「又没货了」的反复。</td>
-      <td>看到有货尽早下单；C.Pre 建议持续关注库存。</td>
     </tr>
     <tr>
       <td><strong>带宽偏小</strong></td>
@@ -924,12 +917,12 @@
 
 <h2 id="sources">数据来源与引用</h2>
 
-<p>本文的产品名称、配置、价格、库存与 fid/gid 参数整理自云悠官网；产品特点与运营商适配的结论来自 NodeSeek 社区的第三方测评与讨论。以下为全部引用来源，可自行复核。</p>
+<p>本文的产品名称、配置、价格与 fid/gid 参数整理自云悠官网；产品特点与运营商适配的结论来自 NodeSeek 社区的第三方测评与讨论。以下为全部引用来源，可自行复核。</p>
 
 <h3>官方来源</h3>
 <ul class="src">
   <li><a href="https://yunyoo.cc/" rel="nofollow noopener" target="_blank">云悠 YUNYOO 官网首页</a> —— 产品档位说明</li>
-  <li><a href="https://yunyoo.cc/cart" rel="nofollow noopener" target="_blank">云悠 YUNYOO 购买产品页</a> —— 各产品线配置、价格、库存</li>
+  <li><a href="https://yunyoo.cc/cart" rel="nofollow noopener" target="_blank">云悠 YUNYOO 购买产品页</a> —— 各产品线配置与价格</li>
   <li><a href="https://yunyoo.cc/product/cvm.html" rel="nofollow noopener" target="_blank">云悠 YUNYOO 云服务器产品页</a></li>
   <li><a href="https://status.yunyoo.cc/" rel="nofollow noopener" target="_blank">云悠 YUNYOO 服务状态页</a></li>
 </ul>
@@ -967,7 +960,7 @@
 <p class="meta">引用整理自 NodeSeek 搜索「云悠yunyoo」结果前两页（共 100 条帖子），并深入阅读其中 34 篇正文与 223 条评论。所有引文均可在上述链接中原文复核。帖中图片形式的测速图与路由图未做文字化，本文结论以帖子文字与评论区讨论为依据。</p>
 
 <footer>
-  <p><strong>免责声明：</strong>本文为第三方整理内容，非云悠官方发布。产品配置、价格与库存以 <a href="https://yunyoo.cc/" rel="nofollow noopener" target="_blank">yunyoo.cc</a> 官网实时信息为准。第三方测评数据受测点位置、测试时段、同机房邻居影响较大，同一机型在不同环境下的表现可能存在差异，请结合自身网络环境判断。</p>
+  <p><strong>免责声明：</strong>本文为第三方整理内容，非云悠官方发布。产品配置与价格以 <a href="https://yunyoo.cc/" rel="nofollow noopener" target="_blank">yunyoo.cc</a> 官网实时信息为准。第三方测评数据受测点位置、测试时段、同机房邻居影响较大，同一机型在不同环境下的表现可能存在差异，请结合自身网络环境判断。</p>
   <p><strong>推广说明：</strong>本文中的购买链接包含推广参数。通过该链接下单不会增加你的费用，但可能为本站带来推荐收益。</p>
   <p>最后更新：2026-10-08</p>
 </footer>
